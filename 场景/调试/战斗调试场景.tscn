@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bvy1n5x2tfm1p"]
+
+[ext_resource type="Script" uid="uid://bd2f2kapkab10" path="res://脚本/领域/战斗/战斗调试入口.gd" id="1_debug"]
+
+[node name="战斗调试场景" type="Node" unique_id=1400158336]
+script = ExtResource("1_debug")
+"自动补帧步长" = null
+"自动补帧上限" = null
+"敌方行动预备时长" = null

@@ -1,0 +1,548 @@
+{
+    "skills":  [
+                   {
+                       "id":  "普通攻击",
+                       "name":  "普通攻击",
+                       "description":  "基础的单体攻击，不附带额外效果。",
+                       "usable_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  1
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  5,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  true,
+                       "tags":  [
+                                    "基础攻击",
+                                    "单体",
+                                    "近战"
+                                ],
+                       "mana_cost":  0
+                   },
+                   {
+                       "id":  "斩击",
+                       "name":  "斩击",
+                       "description":  "稳定的前排单体攻击，适合处理敌方前列。",
+                       "usable_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  1.15
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  5,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "输出",
+                                    "近战",
+                                    "单体"
+                                ],
+                       "mana_cost":  0
+                   },
+                   {
+                       "id":  "破阵猛击",
+                       "name":  "破阵猛击",
+                       "description":  "猛击前排敌人并将其向后击退 1 格。",
+                       "usable_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  0.9
+                                       },
+                                       {
+                                           "type":  "位移",
+                                           "shift":  1
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "输出",
+                                    "位移",
+                                    "前排"
+                                ],
+                       "mana_cost":  2
+                   },
+                   {
+                       "id":  "压迫怒吼",
+                       "name":  "压迫怒吼",
+                       "description":  "震慑敌方单体，造成额外压力。",
+                       "usable_slots":  [
+                                            1,
+                                            2,
+                                            3
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "增加压力",
+                                           "stress":  12
+                                       }
+                                   ],
+                       "cooldown":  1,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "压制",
+                                    "精神",
+                                    "单体"
+                                ],
+                       "mana_cost":  4
+                   },
+                   {
+                       "id":  "整备呼吸",
+                       "name":  "整备呼吸",
+                       "description":  "短暂整备，自我恢复少量生命。",
+                       "usable_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "自身",
+                       "effects":  [
+                                       {
+                                           "type":  "治疗",
+                                           "attribute":  "力量",
+                                           "coefficient":  0.55
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "恢复",
+                                    "自疗"
+                                ],
+                       "mana_cost":  3
+                   },
+                   {
+                       "id":  "精准射击",
+                       "name":  "精准射击",
+                       "description":  "后排主力输出，对中后排敌人造成更高伤害。",
+                       "usable_slots":  [
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_slots":  [
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  1.35
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  10,
+                       "critical_bonus":  5,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "输出",
+                                    "远程",
+                                    "后排"
+                                ],
+                       "mana_cost":  0
+                   },
+                   {
+                       "id":  "压制射击",
+                       "name":  "压制射击",
+                       "description":  "射击目标并压低其行动进度。",
+                       "usable_slots":  [
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  0.8
+                                       },
+                                       {
+                                           "type":  "行动进度变化",
+                                           "progress":  -35.0
+                                       }
+                                   ],
+                       "cooldown":  1,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "输出",
+                                    "控速",
+                                    "远程"
+                                ],
+                       "mana_cost":  3
+                   },
+                   {
+                       "id":  "战地包扎",
+                       "name":  "战地包扎",
+                       "description":  "为友方单体恢复生命。",
+                       "usable_slots":  [
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "友方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "治疗",
+                                           "attribute":  "力量",
+                                           "coefficient":  0.85
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "治疗",
+                                    "辅助"
+                                ],
+                       "mana_cost":  4
+                   },
+                   {
+                       "id":  "鼓舞号令",
+                       "name":  "鼓舞号令",
+                       "description":  "稳定队伍士气，降低友方单体压力。",
+                       "usable_slots":  [
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "友方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "恢复压力",
+                                           "stress":  10
+                                       }
+                                   ],
+                       "cooldown":  1,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "辅助",
+                                    "减压"
+                                ],
+                       "mana_cost":  5
+                   },
+                   {
+                       "id":  "啃咬",
+                       "name":  "啃咬",
+                       "description":  "近身撕咬前排目标。",
+                       "usable_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  1.0
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "输出",
+                                    "近战",
+                                    "野兽"
+                                ],
+                       "mana_cost":  0
+                   },
+                   {
+                       "id":  "扰乱扑击",
+                       "name":  "扰乱扑击",
+                       "description":  "扑向目标并打乱其节奏。",
+                       "usable_slots":  [
+                                            1,
+                                            2,
+                                            3
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  0.75
+                                       },
+                                       {
+                                           "type":  "行动进度变化",
+                                           "progress":  -20.0
+                                       }
+                                   ],
+                       "cooldown":  1,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  false,
+                       "tags":  [
+                                    "输出",
+                                    "控速",
+                                    "野兽"
+                                ],
+                       "mana_cost":  2
+                   },
+                   {
+                       "id":  "敌方普通攻击",
+                       "name":  "普通攻击",
+                       "description":  "敌人的基础单体攻击。",
+                       "usable_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_slots":  [
+                                            1,
+                                            2,
+                                            3,
+                                            4
+                                        ],
+                       "target_camp":  "敌方单体",
+                       "effects":  [
+                                       {
+                                           "type":  "伤害",
+                                           "attribute":  "物理攻击力",
+                                           "coefficient":  1
+                                       }
+                                   ],
+                       "cooldown":  0,
+                       "accuracy_bonus":  0,
+                       "critical_bonus":  0,
+                       "is_basic_attack":  true,
+                       "tags":  [
+                                    "基础攻击",
+                                    "单体"
+                                ],
+                       "mana_cost":  0
+                   }
+               ],
+    "heroes":  [
+                   {
+                       "id":  "英雄一",
+                       "name":  "英雄一",
+                       "primary_attribute":  "敏捷",
+                       "agility":  8.0,
+                       "strength":  6.0,
+                       "base_attributes":  [
+                                               {
+                                                   "attribute":  "敏捷",
+                                                   "value":  8.0
+                                               },
+                                               {
+                                                   "attribute":  "力量",
+                                                   "value":  6.0
+                                               },
+                                               {
+                                                   "attribute":  "命中率",
+                                                   "value":  15.0
+                                               },
+                                               {
+                                                   "attribute":  "智力",
+                                                   "value":  3
+                                               }
+                                           ],
+                       "skills":  [
+                                      "普通攻击",
+                                      "斩击",
+                                      "破阵猛击",
+                                      "压迫怒吼",
+                                      "整备呼吸"
+                                  ]
+                   },
+                   {
+                       "id":  "英雄二",
+                       "name":  "英雄二",
+                       "primary_attribute":  "敏捷",
+                       "agility":  12.0,
+                       "strength":  4.0,
+                       "base_attributes":  [
+                                               {
+                                                   "attribute":  "敏捷",
+                                                   "value":  12.0
+                                               },
+                                               {
+                                                   "attribute":  "力量",
+                                                   "value":  4.0
+                                               },
+                                               {
+                                                   "attribute":  "命中率",
+                                                   "value":  15.0
+                                               },
+                                               {
+                                                   "attribute":  "智力",
+                                                   "value":  6
+                                               }
+                                           ],
+                       "skills":  [
+                                      "普通攻击",
+                                      "精准射击",
+                                      "压制射击",
+                                      "战地包扎",
+                                      "鼓舞号令"
+                                  ]
+                   }
+               ],
+    "enemies":  [
+                    {
+                        "id":  "敌人一",
+                        "name":  "敌人一",
+                        "speed":  6.0,
+                        "base_attributes":  [
+                                                {
+                                                    "attribute":  "生命值",
+                                                    "value":  50.0
+                                                },
+                                                {
+                                                    "attribute":  "速度",
+                                                    "value":  6.0
+                                                },
+                                                {
+                                                    "attribute":  "力量",
+                                                    "value":  4.0
+                                                },
+                                                {
+                                                    "attribute":  "护甲",
+                                                    "value":  10.0
+                                                },
+                                                {
+                                                    "attribute":  "闪避率",
+                                                    "value":  5.0
+                                                },
+                                                {
+                                                    "attribute":  "智力",
+                                                    "value":  2
+                                                }
+                                            ],
+                        "skills":  [
+                                       "敌方普通攻击",
+                                       "啃咬",
+                                       "扰乱扑击"
+                                   ]
+                    },
+                    {
+                        "id":  "敌人二",
+                        "name":  "敌人二",
+                        "speed":  9.0,
+                        "base_attributes":  [
+                                                {
+                                                    "attribute":  "生命值",
+                                                    "value":  50.0
+                                                },
+                                                {
+                                                    "attribute":  "速度",
+                                                    "value":  9.0
+                                                },
+                                                {
+                                                    "attribute":  "力量",
+                                                    "value":  4.0
+                                                },
+                                                {
+                                                    "attribute":  "护甲",
+                                                    "value":  10.0
+                                                },
+                                                {
+                                                    "attribute":  "闪避率",
+                                                    "value":  5.0
+                                                },
+                                                {
+                                                    "attribute":  "智力",
+                                                    "value":  2
+                                                }
+                                            ],
+                        "skills":  [
+                                       "敌方普通攻击",
+                                       "啃咬",
+                                       "扰乱扑击"
+                                   ]
+                    }
+                ]
+}
