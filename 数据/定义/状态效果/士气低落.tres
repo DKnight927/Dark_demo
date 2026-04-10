@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+属性 = 13
+最小值 = -10.0
+最大值 = -10.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"shi_qi_di_luo"
+名称 = "士气低落"
+描述 = "降低压力抗性。"
+持续回合 = 3
+最大层数 = 1
+属性修正列表 = [SubResource("1")]
+是否负面状态 = true

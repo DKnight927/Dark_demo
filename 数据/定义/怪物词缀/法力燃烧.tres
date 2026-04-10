@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"fa_li_ran_shao"
+名称 = "法力燃烧"
+描述 = "命中时额外灼烧目标魔力，不足部分可转为真实伤害。"
+是否精英专属 = true

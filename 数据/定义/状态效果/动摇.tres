@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+属性 = 11
+最小值 = -8.0
+最大值 = -8.0
+是否百分比 = false
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource("2")
+属性 = 13
+最小值 = -10.0
+最大值 = -10.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"dong_yao"
+名称 = "动摇"
+描述 = "命中下降，且更难抵抗后续压力。"
+持续回合 = 2
+最大层数 = 1
+属性修正列表 = [SubResource("1"), SubResource("2")]
+是否负面状态 = true

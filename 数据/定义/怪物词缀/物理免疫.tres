@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"wu_li_mian_yi"
+名称 = "物理免疫"
+描述 = "物理伤害固定降至极低值。实际免疫逻辑后续由词缀系统处理。"
+是否精英专属 = true

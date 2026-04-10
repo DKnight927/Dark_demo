@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"xue_liang_zai_sheng"
+名称 = "血量再生"
+描述 = "每回合开始恢复一定比例最大生命值。具体恢复逻辑后续由词缀系统实现。"
+是否精英专属 = true

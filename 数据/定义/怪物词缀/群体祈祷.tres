@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"qun_ti_qi_dao"
+名称 = "群体祈祷"
+描述 = "治疗技能会额外照顾所有友军。"
+是否精英专属 = true

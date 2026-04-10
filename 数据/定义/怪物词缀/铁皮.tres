@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+属性 = 7
+最小值 = 20.0
+最大值 = 20.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"tie_pi"
+名称 = "铁皮"
+描述 = "护甲提升。"
+属性修正列表 = [SubResource("1")]
+是否精英专属 = true

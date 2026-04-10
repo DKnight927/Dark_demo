@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"xuan_yun"
+名称 = "眩晕"
+描述 = "目标短暂失去行动能力。后续需在行动合法性或回合推进中拦截处理。"
+持续回合 = 1
+最大层数 = 1
+是否负面状态 = true
