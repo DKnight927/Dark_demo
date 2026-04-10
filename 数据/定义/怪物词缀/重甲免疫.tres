@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"zhong_jia_mian_yi"
+名称 = "重甲免疫"
+描述 = "对额外物理伤害具有更强减伤。"
+分类 = &"defense"
+最低层级 = &"middle"
+建议权重 = 10
+特殊机制类型 = &"extra_physical_reduction"
+主要效果说明 = "额外物理减伤 +15%。"
+冲突词缀编号列表 = PackedStringArray("wu_li_mian_yi")
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

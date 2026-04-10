@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"shen_yuan_di_yu"
+名称 = "深渊低语"
+描述 = "压力技能会进一步放大目标后续承压。"
+分类 = &"stress"
+最低层级 = &"deep"
+建议权重 = 8
+特殊机制类型 = &"stress_amp"
+主要效果说明 = "群体压力技能额外附加绝望。"
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

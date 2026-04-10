@@ -4,6 +4,10 @@ class_name 技能定义
 @export var 技能编号: StringName
 @export var 名称: String = ""
 @export_multiline var 描述: String = ""
+@export var 技能等级: int = 1
+@export var 来源单位编号: StringName
+@export var 技能来源: StringName = &"common"
+@export var 技能分类: StringName = &"active"
 @export var 可用站位: PackedInt32Array = PackedInt32Array([1, 2, 3, 4])
 @export var 可选目标站位: PackedInt32Array = PackedInt32Array([1, 2, 3, 4])
 @export var 目标阵营: 目标阵营类型.枚举 = 目标阵营类型.枚举.敌方单体
@@ -13,6 +17,7 @@ class_name 技能定义
 @export var 命中修正: float = 0.0
 @export var 暴击修正: float = 0.0
 @export var 是否基础攻击: bool = false
+@export var 是否敌方技能: bool = false
 @export var 技能标签: PackedStringArray = PackedStringArray()
 @export var 是否专属技能: bool = false
 @export var 效果列表: Array[技能效果定义] = []

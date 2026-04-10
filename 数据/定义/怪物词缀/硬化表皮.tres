@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"ying_hua_biao_pi"
+名称 = "硬化表皮"
+描述 = "进一步提高护甲，但会压低行动速度。"
+分类 = &"defense_tradeoff"
+最低层级 = &"middle"
+建议权重 = 10
+特殊机制类型 = &"attribute"
+主要效果说明 = "护甲 +20%，速度 -1.5。"
+冲突词缀编号列表 = PackedStringArray("tie_pi")
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

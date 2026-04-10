@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+[ext_resource type="Resource" path="res://数据/定义/状态效果/流血.tres" id="3"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 3
+目标状态效果 = ExtResource("3")
+判定概率 = 0.2
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"xue_xing_qi_xi"
+名称 = "血腥气息"
+描述 = "攻击命中时有概率施加流血。"
+分类 = &"ailment"
+最低层级 = &"shallow"
+建议权重 = 10
+特殊机制类型 = &"on_hit_bleed"
+主要效果说明 = "命中时 20% 概率施加 3 回合流血。"
+命中触发效果 = [SubResource("1")]
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

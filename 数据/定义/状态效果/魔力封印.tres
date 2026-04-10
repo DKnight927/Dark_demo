@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 11
+魔力变化值 = -40
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"mo_li_feng_yin"
+名称 = "魔力封印"
+描述 = "持续抽离魔力，并压制施法。"
+状态标签 = PackedStringArray("debuff", "mana_lock")
+持续回合 = 3
+最大层数 = 1
+每回合效果 = [SubResource("1")]
+是否负面状态 = true

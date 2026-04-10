@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"feng_kuang_kuang_nu"
+名称 = "疯狂狂怒"
+描述 = "战斗拖得越久，攻击越高。"
+分类 = &"ramp"
+最低层级 = &"shallow"
+建议权重 = 10
+特殊机制类型 = &"turn_ramp"
+主要效果说明 = "每回合开始物攻 +5%，最多累计到 +30%。"
+冲突词缀编号列表 = PackedStringArray("shi_xue")
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

@@ -5,8 +5,8 @@
 
 [sub_resource type="Resource" id="1"]
 script = ExtResource("2")
-效果类型值 = 0
-数值系数 = 0.06
+效果类型值 = 10
+基础数值 = 8.0
 关联属性 = 2
 
 [resource]
@@ -14,7 +14,10 @@ script = ExtResource("1")
 状态编号 = &"zhong_du"
 名称 = "中毒"
 描述 = "每回合受到一次持续伤害，偏向腐毒来源。"
+状态标签 = PackedStringArray("dot", "poison", "debuff")
 持续回合 = 4
 最大层数 = 3
+叠加时刷新持续时间 = true
+叠加时增加强度 = true
 每回合效果 = [SubResource("1")]
 是否负面状态 = true

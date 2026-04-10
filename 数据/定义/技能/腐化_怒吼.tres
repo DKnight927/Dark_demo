@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="技能定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/技能定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 5
+压力变化值 = 15
+
+[resource]
+script = ExtResource("1")
+技能编号 = &"fu_hua_nu_hou"
+名称 = "腐化怒吼"
+描述 = "对敌方全体施加 15 点压力。"
+来源单位编号 = &"fu_hua_min_bing"
+技能来源 = &"enemy"
+技能分类 = &"pressure"
+可用站位 = PackedInt32Array(1, 2, 3, 4)
+可选目标站位 = PackedInt32Array(1, 2, 3, 4)
+目标阵营 = 4
+冷却回合 = 3
+是否敌方技能 = true
+技能标签 = PackedStringArray("pressure", "aoe")
+效果列表 = [SubResource("1")]

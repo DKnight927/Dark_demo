@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+属性 = 8
+最小值 = -20.0
+最大值 = -20.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"shu_fu"
+名称 = "束缚"
+描述 = "目标被锁链压制，位移技能被封锁。"
+状态标签 = PackedStringArray("debuff", "bind", "movement_lock")
+持续回合 = 2
+最大层数 = 1
+属性修正列表 = [SubResource("1")]
+是否负面状态 = true

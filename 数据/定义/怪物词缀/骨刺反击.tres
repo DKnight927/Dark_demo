@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"gu_ci_fan_ji"
+名称 = "骨刺反击"
+描述 = "受到物理攻击时反弹固定比例真实伤害。"
+分类 = &"thorns"
+最低层级 = &"middle"
+建议权重 = 10
+特殊机制类型 = &"thorns"
+主要效果说明 = "受到物理伤害时，攻击者承受最大生命 5% 的真实伤害。"
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

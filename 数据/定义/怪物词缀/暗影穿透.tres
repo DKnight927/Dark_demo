@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"an_ying_chuan_tou"
+名称 = "暗影穿透"
+描述 = "攻击会绕过护甲，造成近似真实伤害。"
+分类 = &"penetration"
+最低层级 = &"deep"
+建议权重 = 6
+特殊机制类型 = &"ignore_armor"
+主要效果说明 = "所有攻击无视护甲，按真实伤害处理。"
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="3"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 10
+数值系数 = 0.06
+关联属性 = 3
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource("3")
+属性 = 3
+最小值 = -10.0
+最大值 = -10.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"diao_ling_zu_zhou"
+名称 = "凋零诅咒"
+描述 = "按当前生命比例持续流失，并削弱治疗收益。"
+状态标签 = PackedStringArray("dot", "curse", "debuff")
+持续回合 = 4
+最大层数 = 1
+属性修正列表 = [SubResource("2")]
+每回合效果 = [SubResource("1")]
+是否负面状态 = true

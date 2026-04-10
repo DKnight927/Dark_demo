@@ -5,7 +5,7 @@
 
 [sub_resource type="Resource" id="1"]
 script = ExtResource("2")
-效果类型值 = 0
+效果类型值 = 10
 数值系数 = 0.05
 关联属性 = 0
 
@@ -14,7 +14,10 @@ script = ExtResource("1")
 状态编号 = &"liu_xue"
 名称 = "流血"
 描述 = "每回合受到一次持续物理伤害。"
+状态标签 = PackedStringArray("dot", "bleed", "debuff")
 持续回合 = 3
 最大层数 = 3
+叠加时刷新持续时间 = true
+叠加时增加强度 = true
 每回合效果 = [SubResource("1")]
 是否负面状态 = true

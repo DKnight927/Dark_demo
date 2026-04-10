@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"qiang_hua_zhao_huan"
+名称 = "强化召唤"
+描述 = "召唤单位将以更强模板登场。"
+分类 = &"summon"
+最低层级 = &"middle"
+建议权重 = 8
+特殊机制类型 = &"summon_upgrade"
+主要效果说明 = "召唤物改为正常模板或增强模板入场。"
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

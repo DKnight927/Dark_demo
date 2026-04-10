@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+属性 = 7
+最小值 = -20.0
+最大值 = -20.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"bao_lu"
+名称 = "暴露"
+描述 = "护甲被削弱，更容易被后续集火。"
+状态标签 = PackedStringArray("debuff", "armor_down")
+持续回合 = 3
+最大层数 = 1
+属性修正列表 = [SubResource("1")]
+是否负面状态 = true

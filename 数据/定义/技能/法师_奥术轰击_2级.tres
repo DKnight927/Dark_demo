@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="技能定义" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/技能定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 0
+数值系数 = 2.0
+关联属性 = 2
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource("2")
+效果类型值 = 0
+数值系数 = 0.25
+关联属性 = 2
+条件标签 = PackedStringArray("target_magic_resist_below_20")
+
+[resource]
+script = ExtResource("1")
+技能编号 = &"fa_shi_ao_shu_hong_ji_lv2"
+名称 = "奥术轰击"
+描述 = "单体高倍率魔法伤害，对低魔抗目标额外增伤。"
+技能等级 = 2
+来源单位编号 = &"fa_shi"
+技能来源 = &"hero"
+技能分类 = &"exclusive"
+可用站位 = PackedInt32Array(3, 4)
+可选目标站位 = PackedInt32Array(1, 2, 3, 4)
+目标阵营 = 3
+魔法消耗 = 150
+冷却回合 = 1
+技能标签 = PackedStringArray("magic", "single_target", "burst")
+是否专属技能 = true
+效果列表 = [SubResource("1"), SubResource("2")]

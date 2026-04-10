@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"mo_fa_bi_hu"
+名称 = "魔法庇护"
+描述 = "为友方提供短时魔抗强化。"
+分类 = &"team_support"
+最低层级 = &"shallow"
+建议权重 = 6
+特殊机制类型 = &"team_magic_guard"
+主要效果说明 = "每场战斗 1 次，为所有友方施加魔抗提升。"
+冲突词缀编号列表 = PackedStringArray("mo_fa_mian_yi", "qun_ti_qi_dao")
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

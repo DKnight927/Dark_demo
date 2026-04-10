@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"jue_wang"
+名称 = "绝望"
+描述 = "目标接下来承受的压力积累更高。"
+状态标签 = PackedStringArray("debuff", "stress_amp")
+持续回合 = 2
+最大层数 = 1
+是否负面状态 = true

@@ -1,10 +1,24 @@
-[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 11
+魔力变化值 = -50
 
 [resource]
 script = ExtResource("1")
 词缀编号 = &"fa_li_ran_shao"
 名称 = "法力燃烧"
 描述 = "命中时额外灼烧目标魔力，不足部分可转为真实伤害。"
+分类 = &"resource"
+最低层级 = &"shallow"
+建议权重 = 10
+特殊机制类型 = &"mana_burn"
+主要效果说明 = "命中时消耗目标 50 魔力。"
+命中触发效果 = [SubResource("1")]
+允许普通精英 = true
+允许剧情精英 = true
 是否精英专属 = true

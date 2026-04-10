@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/属性修正定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+属性 = 4
+最小值 = 20.0
+最大值 = 20.0
+是否百分比 = true
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource("2")
+属性 = 9
+最小值 = 10.0
+最大值 = 10.0
+是否百分比 = true
+
+[sub_resource type="Resource" id="3"]
+script = ExtResource("2")
+属性 = 10
+最小值 = 10.0
+最大值 = 10.0
+是否百分比 = true
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"shi_qi_gao_ang"
+名称 = "士气高昂"
+描述 = "提高攻击、暴击与闪避。"
+状态标签 = PackedStringArray("buff", "morale")
+持续回合 = 3
+最大层数 = 1
+属性修正列表 = [SubResource("1"), SubResource("2"), SubResource("3")]
+是否负面状态 = false

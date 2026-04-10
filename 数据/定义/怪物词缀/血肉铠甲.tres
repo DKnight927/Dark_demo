@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"xue_rou_kai_jia"
+名称 = "血肉铠甲"
+描述 = "剧情关键精英使用的签名防护词缀。"
+分类 = &"signature"
+最低层级 = &"shallow"
+建议权重 = 0
+特殊机制类型 = &"attribute"
+主要效果说明 = "护甲 +15%，生命 +30%。"
+允许普通精英 = false
+允许剧情精英 = true
+是否精英专属 = true

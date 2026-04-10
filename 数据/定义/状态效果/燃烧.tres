@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="状态效果定义" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/状态效果定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 10
+基础数值 = 9.0
+
+[resource]
+script = ExtResource("1")
+状态编号 = &"ran_shao"
+名称 = "燃烧"
+描述 = "持续承受灼烧伤害。"
+状态标签 = PackedStringArray("dot", "burn", "debuff")
+持续回合 = 3
+最大层数 = 3
+叠加时刷新持续时间 = true
+叠加时增加强度 = true
+每回合效果 = [SubResource("1")]
+是否负面状态 = true

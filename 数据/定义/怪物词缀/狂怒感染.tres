@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"kuang_nu_gan_ran"
+名称 = "狂怒感染"
+描述 = "击杀会让整支敌方队伍短时进入高压进攻。"
+分类 = &"team_ramp"
+最低层级 = &"middle"
+建议权重 = 8
+特殊机制类型 = &"kill_team_buff"
+主要效果说明 = "击败一名英雄后，所有友军 2 回合物攻 +30%。"
+冲突词缀编号列表 = PackedStringArray("shi_xue")
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

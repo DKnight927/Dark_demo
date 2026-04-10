@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"mo_fa_xi_shou"
+名称 = "魔法吸收"
+描述 = "受到魔法伤害时，会将部分伤害转化为治疗。"
+分类 = &"anti_magic"
+最低层级 = &"deep"
+建议权重 = 6
+特殊机制类型 = &"magic_absorb"
+主要效果说明 = "受到魔法伤害时，按最终伤害 50% 回复生命。"
+冲突词缀编号列表 = PackedStringArray("mo_fa_mian_yi")
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true

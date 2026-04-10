@@ -1,10 +1,25 @@
-[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 1
+数值系数 = 0.05
+关联属性 = 3
 
 [resource]
 script = ExtResource("1")
 词缀编号 = &"xue_liang_zai_sheng"
 名称 = "血量再生"
 描述 = "每回合开始恢复一定比例最大生命值。具体恢复逻辑后续由词缀系统实现。"
+分类 = &"sustain"
+最低层级 = &"shallow"
+建议权重 = 12
+特殊机制类型 = &"turn_heal"
+主要效果说明 = "每回合开始恢复 5% 最大生命。"
+回合开始效果 = [SubResource("1")]
+允许普通精英 = true
+允许剧情精英 = true
 是否精英专属 = true

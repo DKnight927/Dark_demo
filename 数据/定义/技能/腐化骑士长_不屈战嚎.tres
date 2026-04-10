@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="技能定义" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/技能定义.gd" id="1"]
+[ext_resource type="Script" path="res://脚本/数据/技能效果定义.gd" id="2"]
+[ext_resource type="Resource" path="res://数据/定义/状态效果/铁壁.tres" id="3"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+效果类型值 = 3
+目标状态效果 = ExtResource("3")
+持续回合覆盖 = 2
+
+[resource]
+script = ExtResource("1")
+技能编号 = &"fu_hua_qi_shi_zhang_bu_qu_zhan_hao"
+名称 = "不屈战嚎"
+描述 = "强化己方前线并进入拦截嘲讽节奏。"
+来源单位编号 = &"fu_hua_qi_shi_zhang"
+技能来源 = &"enemy"
+技能分类 = &"support"
+可用站位 = PackedInt32Array(1, 2)
+可选目标站位 = PackedInt32Array(1, 2, 3, 4)
+目标阵营 = 2
+冷却回合 = 3
+是否敌方技能 = true
+技能标签 = PackedStringArray("buff", "guard", "taunt")
+效果列表 = [SubResource("1")]

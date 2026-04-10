@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="怪物词缀定义" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://脚本/数据/怪物词缀定义.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+词缀编号 = &"shuang_chong_chong_ci"
+名称 = "双重冲刺"
+描述 = "高威胁位移技能可额外使用一次。"
+分类 = &"skill_count"
+最低层级 = &"deep"
+建议权重 = 10
+特殊机制类型 = &"extra_skill_charge"
+主要效果说明 = "特定高威胁技能每场战斗可额外使用 1 次。"
+允许普通精英 = true
+允许剧情精英 = true
+是否精英专属 = true
